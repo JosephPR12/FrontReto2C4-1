@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="icon"   href="img/gym.png" type="image/png" />
+    <link rel="stylesheet" href="css/producform.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <title>Formulario de producto | Hypercalorico</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="hero-imagen">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+
+                <form id="userForm" class="form" action="" method="post">
+                    <h3 class="text-center pt-5 titulo">Registrar producto</h3>
+                    <div class="form-group">
+                        <label for="referenceProduc">Referencia:</label><br />
+                        <input type="text" name="referenceProduc" id="referenceProduc" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="brandProduc">Marca:</label><br/>
+                        <input type="text" name="brandProduc" id="brandProduc" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="categoryPrduc">Categoría:</label><br/>
+                        <input type="text" name="categoryPrduc" id="categoryPrduc" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="objetivoProduc">Objetivo:</label><br/>
+                        <input type="text" name="objetivoProduc" id="objetivoProduc" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionProduc">Descripción:</label><br/>
+                        <input type="text" name="descripcionProduc" id="descripcionProduc" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="habilitadoProduc">Habilitado:</label><br/>
+                        <select name="habilitadoProduc" id="habilitadoProduc" class="form-control" required>
+                            <option selected value="siProduc">True</option>
+                            <option value="noProduc">False</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="precioProduc">Precio:</label><br/>
+                        <input type="number" name="precioProduc" id="precioProduc" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cantidadPrudc">Cantidad:</label><br/>
+                        <input type="number" name="cantidadPrudc" id="cantidadPrudc" class="form-control" required>
+                    </div>               
+                    <div class="form-group">
+                        <label for="fotografiaProduc">Fotografía - URL:</label><br/>
+                        <input type="url" name="fotografiaProduc" id="fotografiaProduc" class="form-control" required>
+                    </div>     
+
+                    <div class="form-group text-center">
+                        <input type="submit" name="guardaDatos" class="btn btn-secondary btn-md" value="Guardar" onclick=""/>                                
+                        <input class="btn btn-secondary btn-md" value="Cancelar" onclick=""/>                                
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>

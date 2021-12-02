@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="icon"   href="img/gym.png" type="image/png" />
+    <link rel="stylesheet" href="css/userform.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <title>Formulario de usuario | Hypercalorico</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="hero-imagen">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+
+                <form id="userForm" class="form" action="" method="post">
+                    <h3 class="text-center pt-5 titulo">Formulario de usuario</h3>
+                    <div class="texto-label">
+                    <div class="form-group">
+                        <label for="identificationUser" >Identificación:</label><br />
+                        <input type="number" name="identificationUser" id="identificationUser" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="nameUser" >Nombre:</label><br/>
+                        <input type="text" name="nameUser" id="nameUser" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="addressUser">Dirección:</label><br/>
+                        <input type="text" name="addressUser" id="addressUser" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cellPhone">Telefono:</label><br/>
+                        <input type="number" name="cellPhone" id="cellPhone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailUser">Correo:</label><br/>
+                        <input type="email" name="emailUser" id="emailUser" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordUser">Contraseña:</label><br/>
+                        <input type="password" name="passwordUser" class="form-control" id="passwordUser" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zoneUser">Zona:</label><br/>
+                        <input type="text" name="zoneUser" class="form-control" id="zoneUser" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="typeUser">Tipo usuario:</label><br/>
+                        <select name="typeUser" id="typeUser" class="form-control" required>
+                            <option selected value="">Seleccione tipo de usuario</option>
+                            <option value="coordinadorZona">Coordinador de zona</option>
+                            <option value="asesorComercial">Asesor Comerial</option>
+                        </select>
+                    </div>
+                    <div class="form-group text-center">
+                        <input type="submit" name="guardaDatos" class="btn btn-secondary btn-md" value="Guardar" onclick=""/>
+                        <input class="btn btn-secondary btn-md" value="Cancelar" onclick=""/>
+                    </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>

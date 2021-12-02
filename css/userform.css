@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  .titulo{
+    font-size: 2.5rem;
+  }
+
+  
+  .titulo span{
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+  
+  #login .container #login-row #login-column #login-box {
+    margin-top: 30px;
+    max-width: 600px;
+    height: 520px;
+    border: 1px solid #9c9c9c;
+    border-radius: .7rem;
+    background-color: #eaeaea;
+  }
+  #login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+  }
+  #login
+    .container
+    #login-row
+    #login-column
+    #login-box
+    #login-form
+    #register-link {
+    margin-top: -85px;
+  }
+
+  .hero-imagen{
+    background-image: url(../img/nutrición2.jpg);
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 5%;
+    
+  }
+  
